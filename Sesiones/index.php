@@ -20,7 +20,8 @@ and open the template in the editor.
             session_regenerate_id();
         }
         echo session_id();
-        $_SESSION['valor'] = 27;
+        //$_SESSION['valor'] = random_int(1, 100);
+        $_SESSION['valor'] = rand() % 100 + 1;
         ?>
         <form name="cerrar" action="otra.php">
             <input type="submit" name="otra" value="otro">

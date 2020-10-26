@@ -13,8 +13,8 @@ and open the template in the editor.
         <?php
         $vec = $_REQUEST['caja'];
         print_r($vec);echo '<br>';
-        foreach ($vec as $dato) {
-            echo $dato.'<br>';
+        foreach ($vec as $ind => $dato) {
+            echo $ind .' => '. $dato.'<br>';
         }
         ?>
     </body>

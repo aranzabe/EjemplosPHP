@@ -34,26 +34,28 @@ and open the template in the editor.
         foreach ($vec as $cod => $dato) {
             echo $cod.'-->'.$dato.'<br>';
         }
-        echo $vec['DAW2'];
+        echo $vec['DAW2'].'<br>';
         
         
         //Definición manual de arrays.
         echo '---------------------------'.'<br>';
         $v = array('DAW1' => 1, 'DAW2' => true, 'a', 'otra cosa');
+        //o
+        //$v = ['DAW1' => 1, 'DAW2' => true, 'a', 'otra cosa'];
         foreach ($v as $cod => $dato) {
             echo $cod.'-->'.$dato.'<br>';
         }
         echo '---------------------------'.'<br>';
         
         $v2 = [
-            'DAW1' => 120,
-            'DAW2' => 2389,
+            'DAW1' => 10,
+            'DAW2' => 20,
             -15
         ];
         
         $v2['DAW1'] = 120;
         $v2['DAW2'] = 2389;
-        $v2[]= -15;
+        $v2[]= -30;
         
         foreach ($v2 as $cod => $dato) {
             echo $cod.'-->'.$dato.'<br>';

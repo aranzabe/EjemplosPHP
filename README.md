@@ -1,1 +1,1 @@
-EjemplosPHP
+Ejemplos de clase de PHP.

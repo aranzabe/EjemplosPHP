@@ -21,5 +21,7 @@ and open the template in the editor.
             echo 'Has pulsado cancelar';
         }
         ?>
+        <br>
+        <a href="index.php">Volver</a>
     </body>
 </html>

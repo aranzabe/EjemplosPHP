@@ -16,7 +16,7 @@ include 'Persona.php';
 
 class Sith extends Persona implements Metodos {
     private $maldad;
-    static public $PUBSITH;
+    public static $PUBSITH;
     
     function __construct($nombre,$edad,$maldad) {
         parent::__construct($nombre, $edad);

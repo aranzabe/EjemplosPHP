@@ -13,11 +13,11 @@ and open the template in the editor.
         <?php
 
         function autoload($clase) {
-            include 'Clases/' . $clase . '.php';
+            include_once 'Clases/' . $clase . '.php';
         }
 
         function miAutoloadDos($clase) {
-            require 'Otro/'.$clase.'.php';
+            include_once 'Otro/'.$clase.'.php';
         }
         spl_autoload_register('autoload');
         spl_autoload_register("miAutoloadDos");

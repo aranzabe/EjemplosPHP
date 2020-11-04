@@ -17,6 +17,8 @@ class Animal {
 
     function __construct($raza) {
         $this->raza = $raza;
+        $this->raza = new Persona('Yo que sé');
+        echo $this->raza;
     }
 
     public function __toString() {

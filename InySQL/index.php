@@ -43,6 +43,7 @@ and open the template in the editor.
         $val1 = "101A";
         $stmt->execute();
         $result = $stmt->get_result();
+        var_dump($result);
         while ($fila = $result->fetch_assoc()) {
             var_dump($fila);
             echo 'DNI: ' . $fila['DNI'] . '<br>';

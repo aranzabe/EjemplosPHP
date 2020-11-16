@@ -18,6 +18,7 @@ and open the template in the editor.
 
         if (mysqli_connect_errno($conexion)) {
             print "Fallo al conectar a MySQL: " . mysqli_connect_error();
+            die();
         }
 
         $consulta = "SELECT * FROM personas";

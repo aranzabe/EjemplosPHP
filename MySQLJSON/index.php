@@ -23,7 +23,7 @@ and open the template in the editor.
         $objs = json_decode($datJSON);
         //var_dump($objs);
         foreach ($objs as $o){
-            echo $o->DNI.', '.$o->Nombre.', '.$o->Clave.', '.$o->Tfno.'<br>';
+            echo $o->DNI.', '.$o->Nombre.', '.$o->Tfno.'<br>';
         }
         echo '<br>';
         
@@ -31,7 +31,7 @@ and open the template in the editor.
         //Cuando es TRUE, los object devueltos serán convertidos a array asociativos. 
         //var_dump($vectAsoc);
         foreach($vectAsoc as $dato){
-            echo $dato['DNI'].', '.$dato['Nombre'].', '.$dato['Clave'].', '.$dato['Tfno'].'<br>';
+            echo $dato['DNI'].', '.$dato['Nombre'].', '.$dato['Tfno'].'<br>';
         }
         ?>
     </body>
